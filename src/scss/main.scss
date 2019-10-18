@@ -4,13 +4,67 @@
 
 html {
   box-sizing: border-box;
+
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../assets/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__logo-wrapper {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  &__logo {
+    height: 35px;
+  }
+
+  &__heading-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__heading {
+    color: white;
+    text-transform: uppercase;
+
+    &-1 {
+      display: block;
+      font-size: 60px;
+      font-weight: 400;
+      letter-spacing: 35px;
+    }
+
+    &-2 {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 17.4px;
+    }
+  }
 }
