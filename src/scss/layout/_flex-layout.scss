@@ -1,0 +1,12 @@
+.about-content {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    flex-basis: 45vw;
+  }
+
+  &__images {
+    flex-basis: 45vw;
+  }
+}
