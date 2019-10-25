@@ -70,6 +70,7 @@
   &:hover {
     background-color: $mediumgreen;
     color: white;
+    padding: .5rem 1rem;
     box-shadow: 0 1rem 2rem rgba($color-black, .15);
     transform: translateY(-2px);
   }
