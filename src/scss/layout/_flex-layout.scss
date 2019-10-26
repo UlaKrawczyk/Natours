@@ -1,6 +1,5 @@
 .about-content {
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between);
 
   &__text {
     flex-basis: 45vw;
@@ -14,8 +13,11 @@
 }
 
 .section-features__wrapper {
-  display: flex;
-  justify-content: space-around;
+  @include flex(space-around);
   max-width: 114rem;
   margin: 0 auto;
+}
+
+.cards-wrapper {
+  @include flex(space-between);
 }
