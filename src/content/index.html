@@ -50,7 +50,7 @@
         <span class="header__heading--2">is where life happens</span>
       </h1>
 
-      <a href="#" class="button button--white button--animated">Discover out tours</a>
+      <a href="#section-tours" class="button button--white button--animated">Discover our tours</a>
     </div>
   </header>
 
@@ -113,7 +113,7 @@
       </div>
     </section>
 
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Most popular tours</h2>
       </div>
@@ -140,7 +140,7 @@
                 <p class="card__price-only">only</p>
                 <p class="card__price-value">$297</p>
               </div>
-              <a href="#" class="button button--white">book now!</a>
+              <a href="#popup" class="button button--white">book now!</a>
             </div>
           </div>
         </div>
@@ -166,7 +166,7 @@
                 <p class="card__price-only">only</p>
                 <p class="card__price-value">$563</p>
               </div>
-              <a href="#" class="button button--white">book now!</a>
+              <a href="#popup" class="button button--white">book now!</a>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@
                 <p class="card__price-only">only</p>
                 <p class="card__price-value">$862</p>
               </div>
-              <a href="#" class="button button--white">book now!</a>
+              <a href="#popup" class="button button--white">book now!</a>
             </div>
           </div>
         </div>
@@ -303,34 +303,25 @@
     </div>
   </footer>
 
-  <div class="popup">
+  <div class="popup" id="popup">
     <div class="popup__content">
-
       <div class="popup__images">
         <div class="popup__image popup__image--1"></div>
         <div class="popup__image popup__image--2"></div>
       </div>
-
       <div class="popup__text">
-
-        <div class="u-margin-bottom-small">
-          <h2 class="heading-secondary">Start booking now</h2>
-        </div>
+        <a href="#section-tours" class="popup__close-button">&times;</a>
+        <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
         <h3 class="heading-tertiary u-margin-bottom-small">important - please read these terms before booking</h3>
-
         <p class="popup__column paragraph u-margin-bottom-medium">Korzystając z naszej usługi (dalej „Usługa”)
           powierzasz nam swoje informacje. Polityka prywatności służy jako pomoc w zrozumieniu, jakie dane zbieramy i w
-          jakim celu oraz
-          do
-          czego je wykorzystujemy. Te informacje są ważne, dlatego prosimy o dokładne zapoznanie się z tym
-          dokumentem. Dla zapewnienia wygody użytkowania naszych serwisów używamy technologii
-          Local Storage (LS), zbliżonej zasadą działania do plików cookies, mającej jednak nieco inne właściwości. LS
-          to wydzielona część pamięci przeglądarki, służąca do przechowywania danych zapisywanych przez serwisy.</p>
-
+          jakim celu oraz do czego je wykorzystujemy. Te informacje są ważne, dlatego prosimy o dokładne zapoznanie się
+          z tym dokumentem. Dla zapewnienia wygody użytkowania naszych serwisów używamy technologii Local Storage (LS),
+          zbliżonej zasadą działania do plików cookies, mającej jednak nieco inne właściwości. LS to wydzielona część
+          pamięci przeglądarki, służąca do przechowywania danych zapisywanych przez serwisy.</p>
         <div class="u-margin-bottom-small">
           <button class="button button--green">book now!</button>
         </div>
-
       </div>
     </div>
   </div>
