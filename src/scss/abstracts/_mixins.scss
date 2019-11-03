@@ -1,6 +1,13 @@
-@mixin flex ($justify) {
+@mixin flex($justify) {
   display: flex;
   justify-content: $justify;
+}
+
+@mixin positionCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin clearfix {
