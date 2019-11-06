@@ -14,10 +14,22 @@
 
   &__content-wrapper {
     @include flex(space-between);
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__nav {
     flex-basis: 50%;
+
+    @include respond(tab-port) {
+      flex-basis: auto;
+      width: 90%;
+      text-align: center;
+      align-self: center;
+      margin-bottom: 6rem;
+    }
   }
 
   &__nav-list {
@@ -44,6 +56,10 @@
     color: $color-white;
     text-transform: uppercase;
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
   }
 
   &__nav-link:hover {
@@ -57,7 +73,21 @@
     flex-basis: 40%;
     padding-top: 1.5rem;
     border-top: 1px solid $color-dark-grey;
+    font-size: 1.2rem;
+
     text-align: justify;
+
+    @include respond(tab-port) {
+      flex-basis: auto;
+      width: 90%;
+      text-align: center;
+      align-self: center;
+      margin: 0 10rem;
+      font-size: 1.3rem;
+    }
+    @include respond(phone-small) {
+      margin: 0 5rem;
+    }
   }
 
   &__span {

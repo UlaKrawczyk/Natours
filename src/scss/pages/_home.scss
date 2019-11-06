@@ -1,11 +1,7 @@
 .section-about {
   background-color: $color-light-grey;
   padding: 25rem 0;
-  margin-top: -20vh;
-
-  @include respond(tab-land) {
-    margin-top: -25vh;
-  }
+  margin-top: -22vh;
 }
 
 .section-features {
