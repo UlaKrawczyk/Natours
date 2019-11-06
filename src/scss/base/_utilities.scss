@@ -33,4 +33,12 @@
 .u-margin-grey-section {
   max-width: 114rem;
   margin: 0 auto;
+
+  @media (max-width: 1300px) {
+    padding: 0 4rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 0 4rem;
+  }
 }

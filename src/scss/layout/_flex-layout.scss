@@ -4,11 +4,34 @@
   &__text {
     flex-basis: 45vw;
     margin-right: 3rem;
+
+    @include respond(tab-port) {
+      flex-basis: auto;
+      column-count: 2;
+      column-gap: 3rem;
+      margin-right: 0;
+      margin-bottom: 9rem;
+    }
+
+    @include respond(phone) {
+      column-count: 1;
+      column-gap: 0;
+    }
   }
 
   &__images {
     flex-basis: 45vw;
     margin-left: 3rem;
+
+    @include respond(tab-port) {
+      align-self: center;
+      width: 75vw;
+      margin-left: 0;
+    }
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
   }
 }
 
@@ -16,6 +39,10 @@
   @include flex(space-around);
   max-width: 114rem;
   margin: 0 auto;
+
+  @include respond(tab-land) {
+    padding: 0 4rem;
+  }
 }
 
 .cards-wrapper {
