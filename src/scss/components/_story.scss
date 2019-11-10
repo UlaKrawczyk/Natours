@@ -1,14 +1,26 @@
 .story {
-  width: 57%;
+  width: 66%;
   margin: 0 auto 8rem auto;
   padding: 5rem 6rem 5rem 9rem;
-  background-color: rgba($color-white, .6);
-  box-shadow: 0 1rem 3rem rgba($color-black, .3);
+  background-color: rgba($color-white, 0.6);
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
   border-radius: 3px;
   transform: skewX(-12deg);
 
+  @include respond(tab-land) {
+    width: 75%;
+    padding: 5rem 4rem 5rem 8.5rem;
+  }
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+  @include respond(phone-small) {
+    width: 85%;
+    padding-right: 7rem;
+  }
+
   &:hover &__image {
-    filter: blur(4px) brightness(.8);
+    filter: blur(4px) brightness(0.8);
     transform: translateX(-4rem) scale(1);
   }
 
@@ -26,11 +38,19 @@
     shape-outside: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
 
+    @include respond(tab-port) {
+      margin-bottom: 1rem;
+    }
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+      margin-bottom: 1rem;
+    }
+
     .story__image {
       height: 100%;
       transform: translateX(-4rem) scale(1.3);
       backface-visibility: hidden;
-      transition: all .4s;
+      transition: all 0.4s;
     }
 
     .story__name {
@@ -44,12 +64,16 @@
       text-transform: uppercase;
       color: $color-white;
       opacity: 0;
-      transition: all .4s;
+      transition: all 0.4s;
       backface-visibility: hidden;
     }
   }
 
   &__text {
     transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 }

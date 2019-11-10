@@ -3,6 +3,10 @@
   background-color: $color-dark-dark-grey;
   color: $color-white;
 
+  @include respond(tab-port) {
+    padding: 9rem 0;
+  }
+
   &__logo-wrapper {
     width: 17rem;
     margin: 0 auto;

@@ -9,19 +9,36 @@
     transition: 0.2s;
     outline-offset: 2rem;
 
+    @include respond(tab-port) {
+      width: 35%;
+    }
+
     &--ph1 {
       top: -2rem;
       left: 0;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &--ph2 {
       top: 2rem;
       right: 0;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &--ph3 {
       top: 11rem;
       left: 20%;
+
+      @include respond(tab-port) {
+        top: -2rem;
+        left: 32.5%;
+      }
     }
 
     &:hover {

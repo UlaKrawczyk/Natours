@@ -10,12 +10,13 @@
       column-count: 2;
       column-gap: 3rem;
       margin-right: 0;
-      margin-bottom: 9rem;
+      margin-bottom: 8rem;
     }
 
     @include respond(phone) {
       column-count: 1;
       column-gap: 0;
+      margin-bottom: 6rem;
     }
   }
 
@@ -25,8 +26,18 @@
 
     @include respond(tab-port) {
       align-self: center;
-      width: 75vw;
+      flex-basis: 60vh;
+      width: 85vw;
       margin-left: 0;
+    }
+    @media (max-width: 750px) {
+      flex-basis: 52vh;
+    }
+    @include respond(phone) {
+      flex-basis: 43vh;
+    }
+    @media (max-width: 475px) {
+      flex-basis: 35vh;
     }
   }
 
