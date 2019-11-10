@@ -2,6 +2,18 @@
   width: 50%;
   padding: 4.5rem;
 
+  @include respond(tab-land) {
+    width: 70%;
+    padding: 3.5rem 2rem;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+    text-align: center;
+  }
+  @include respond(phone-small) {
+    padding: 3.5rem 0.8rem;
+  }
+
   &__input {
     width: 80%;
     display: block;
@@ -13,6 +25,11 @@
     font-family: inherit;
     color: inherit;
     transition: all 0.3s;
+
+    @media (max-width: 450px) {
+      width: 100%;
+      // margin: 0 auto;
+    }
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -28,6 +45,10 @@
     font-size: 1.2rem;
     font-weight: 700;
     transition: all 0.3s;
+
+    @media (max-width: 450px) {
+      text-align: left;
+    }
   }
   &__input:placeholder-shown + &__label {
     opacity: 0;
@@ -39,6 +60,18 @@
     width: 48%;
     margin-top: 1.5rem;
     display: inline-block;
+
+    @include respond(tab-port) {
+      margin-top: 0;
+    }
+    @include respond(phone) {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 450px) {
+      display: inline-block;
+      margin-bottom: 0;
+    }
   }
   &__radio-input {
     display: none;
@@ -48,6 +81,10 @@
     font-size: $default-font-size;
     cursor: pointer;
     padding-left: 4rem;
+
+    @include respond(phone-small) {
+      padding-left: 3.5rem;
+    }
   }
   &__radio-button {
     width: 3rem;
