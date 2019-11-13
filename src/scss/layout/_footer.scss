@@ -10,6 +10,11 @@
   &__logo-wrapper {
     width: 17rem;
     margin: 0 auto;
+    text-align: center;
+
+    @include respond(phone) {
+      width: 35rem;
+    }
 
     .footer__logo {
       width: 100%;

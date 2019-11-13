@@ -1,6 +1,10 @@
 .about-content {
   @include flex(space-between);
 
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
   &__text {
     flex-basis: 45vw;
     margin-right: 3rem;
@@ -26,23 +30,25 @@
 
     @include respond(tab-port) {
       align-self: center;
-      flex-basis: 60vh;
+      flex-basis: 45rem;
       width: 85vw;
       margin-left: 0;
     }
     @media (max-width: 750px) {
-      flex-basis: 52vh;
+      flex-basis: 42rem;
     }
     @include respond(phone) {
-      flex-basis: 43vh;
+      flex-basis: 38rem;
+    }
+    @media (max-width: 515px) {
+      flex-basis: 35rem;
     }
     @media (max-width: 475px) {
-      flex-basis: 35vh;
+      flex-basis: 33rem;
     }
-  }
-
-  @include respond(tab-port) {
-    flex-direction: column;
+    @media (max-width: 340px) {
+      flex-basis: 30rem;
+    }
   }
 }
 

@@ -10,7 +10,10 @@
     padding: 23rem 0 7rem 0;
   }
   @include respond(phone) {
-    margin-top: -20vh;
+    margin-top: -17vh;
+  }
+  @media (max-width: 340px) {
+    margin-top: -15vh;
   }
 }
 
