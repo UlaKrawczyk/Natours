@@ -47,10 +47,18 @@
     background-size: cover;
 
     &--1 {
-      background-image: url(../assets/img/nat-8.jpg);
+      background-image: url(../assets/img/nat-8-medium.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+        background-image: url(../assets/img/nat-8.jpg);
+      }
     }
     &--2 {
-      background-image: url(../assets/img/nat-9.jpg);
+      background-image: url(../assets/img/nat-9-medium.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+        background-image: url(../assets/img/nat-9.jpg);
+      }
     }
   }
 
