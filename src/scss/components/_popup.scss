@@ -5,8 +5,13 @@
   top: 0;
   left: 0;
   z-index: 250;
-  background-color: rgba($color-black, 0.9);
   padding: 8rem 0;
+  background-color: rgba($color-black, 0.8);
+
+  @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, 0.3);
+  }
   //popup niewidoczny
   opacity: 0;
   visibility: hidden;
@@ -49,14 +54,18 @@
     &--1 {
       background-image: url(../assets/img/nat-8-medium.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+      @media (min-resolution: 192dpi) and (min-width: 600px),
+        (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+        (min-width: 2000px) {
         background-image: url(../assets/img/nat-8.jpg);
       }
     }
     &--2 {
       background-image: url(../assets/img/nat-9-medium.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+      @media (min-resolution: 192dpi) and (min-width: 600px),
+        (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+        (min-width: 2000px) {
         background-image: url(../assets/img/nat-9.jpg);
       }
     }
