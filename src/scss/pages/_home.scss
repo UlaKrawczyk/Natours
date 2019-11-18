@@ -62,11 +62,7 @@
 
 .section-stories {
   position: relative;
-  padding: 12rem 0;
-
-  @include respond(tab-land) {
-    padding: 10rem 0;
-  }
+  padding: 9rem 0;
 }
 
 .section-book {

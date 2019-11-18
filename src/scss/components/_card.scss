@@ -83,6 +83,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+
     @include respond(tab-port) {
       background-position: center 30%;
     }
