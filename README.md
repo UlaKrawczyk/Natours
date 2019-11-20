@@ -15,6 +15,9 @@
 * form with custom radio buttons
 * bacground video
 
+![rotating tour-cards](github/cards-small.jpg)
+
+
 ### Page is fully responsive using:
 * media queries and correct units
 * responsive images with resolution and density switching, art direction
