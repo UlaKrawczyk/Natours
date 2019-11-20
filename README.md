@@ -1,7 +1,7 @@
 # NATOURS
 ## outdoor is where life happens!
 
-![nature](github/webpage desktop.jpg)
+![nature](github/webpage-desktop.jpg)
 
 
 **If you want to try it out, click here: [Natours webpage](https://ulakrawczyk.github.io/Natours/)**
@@ -14,4 +14,4 @@
 
 ### Page is fully responsive even the images:
 
-![nature](github/webpage mobile.jpg)
+![nature](github/webpage-mobile.jpg)
