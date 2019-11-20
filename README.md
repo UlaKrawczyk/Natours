@@ -1,5 +1,4 @@
-# NATOURS
-## outdoor is where life happens!
+# NATOURS ## outdoor is where life happens!
 
 ![nature](github/webpage-desktop.jpg)
 
