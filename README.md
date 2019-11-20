@@ -1,4 +1,5 @@
-# NATOURS ## outdoor is where life happens!
+# NATOURS 
+## a webpage for adventurous people!
 
 ![nature](github/webpage-desktop.jpg)
 
