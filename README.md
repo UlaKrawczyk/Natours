@@ -1,10 +1,13 @@
-# wtf-gulp-starter
+# NATOURS
+## outdoor is where life happens!
 
-`npm install -g gulp-cli`
+![nature](github/cover.jpg)
 
-`npm install`
 
-`gulp`
+**If you want to try it out, click here: [Natours webpage](https://ulakrawczyk.github.io/Natours/)**
 
-To publish your page using github pages use `npm run deploy`
-"# Natours" 
+### This is a webpage created during the Udemy course of advanced techniques in CSS:
+* html5
+* css3
+* gulp (based on starter kit)
+* npm packages
