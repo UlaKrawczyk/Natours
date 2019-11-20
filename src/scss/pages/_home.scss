@@ -26,9 +26,9 @@
   margin-top: -10rem;
   transform: skewY(-7deg);
 
-  @media (min-resolution: 192dpi) and (min-width: 600px),
-    (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
-    (min-width: 2000px) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 600px),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+    only screen and (min-width: 2000px) {
     background-image: linear-gradient(to right bottom, rgba($lightgreen, 0.8), rgba($darkgreen, 0.8)),
       url(../../assets/img/nat-4.jpg);
   }
@@ -80,23 +80,23 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 3rem rgba($color-black, 0.3);
 
-    @media (min-resolution: 192dpi) and (min-width: 600px),
-      (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
-      (min-width: 2000px) {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 600px),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+      only screen and (min-width: 2000px) {
       background-image: linear-gradient(105deg, rgba($color-white, 0.9) 50%, transparent 50%),
         url(../../assets/img/nat-10.jpg);
     }
-    @media (max-width: 1200px) and (min-resolution: 192dpi),
-      (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen and (max-width: 1200px) and (min-resolution: 192dpi),
+      only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
       background-image: linear-gradient(105deg, rgba($color-white, 0.9) 65%, transparent 35%),
         url(../../assets/img/nat-10.jpg);
     }
-    @media (max-width: 1200px) and (max-resolution: 191dpi),
-      (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media only screen and (max-width: 1200px) and (max-resolution: 191dpi),
+      only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
       background-image: linear-gradient(105deg, rgba($color-white, 0.9) 65%, transparent 35%),
         url(../../assets/img/nat-10-small.jpg);
     }
-    @media (max-width: 450px) {
+    @media only screen and (max-width: 450px) {
       background-image: linear-gradient(rgba($color-white, 0.9)), url(../../assets/img/nat-10-small.jpg);
     }
   }

@@ -4,17 +4,25 @@
   height: 50rem;
   perspective: 150rem;
 
-  @include respond(tab-port) {
-    width: 70%;
+  @media only screen and (hover: none) {
+    width: 29%;
     height: auto;
-    margin: 0 auto;
     box-shadow: 0 1.5rem 2rem rgba($color-black, 0.2);
   }
+
+  @media only screen and (max-width: 56.25em) {
+    width: 70%;
+    margin: 0 auto;
+    // height: auto;
+    // box-shadow: 0 1.5rem 2rem rgba($color-black, 0.2);
+  }
+
   &:not(:last-child) {
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em) {
       margin-bottom: 4rem;
     }
   }
+
   &__side {
     position: absolute;
     top: 0;
@@ -27,7 +35,7 @@
     overflow: hidden;
     transition: all 0.8s ease;
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       position: relative;
       height: auto;
       box-shadow: none;
@@ -38,7 +46,7 @@
       background-size: cover;
       background-position: bottom bottom;
 
-      @include respond(tab-port) {
+      @media only screen and (max-width: 56.25em), only screen and (hover: none) {
         padding-bottom: 7rem;
       }
     }
@@ -46,7 +54,7 @@
     &--back {
       transform: rotateY(180deg);
 
-      @include respond(tab-port) {
+      @media only screen and (max-width: 56.25em), only screen and (hover: none) {
         transform: rotateY(0);
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         margin-top: -6rem;
@@ -64,10 +72,11 @@
       }
     }
   }
+
   &:hover &__side--front {
     transform: rotateY(-180deg);
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       transform: rotateY(0);
     }
   }
@@ -84,16 +93,16 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       background-position: center 30%;
     }
     &--1 {
       background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
         url(../../assets/img/nat-5-small.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 600px),
-        (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
-        (min-width: 2000px) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 600px),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+        only screen and (min-width: 2000px) {
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
           url(../../assets/img/nat-5.jpg);
       }
@@ -101,9 +110,9 @@
     &--2 {
       background-image: linear-gradient(to right bottom, $lightgreen, $darkgreen), url(../../assets/img/nat-6-small.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 600px),
-        (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
-        (min-width: 2000px) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 600px),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+        only screen and (min-width: 2000px) {
         background-image: linear-gradient(to right bottom, $lightgreen, $darkgreen), url(../../assets/img/nat-6.jpg);
       }
     }
@@ -111,9 +120,9 @@
       background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
         url(../../assets/img/nat-7-small.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 600px),
-        (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
-        (min-width: 2000px) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 600px),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+        only screen and (min-width: 2000px) {
         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
           url(../../assets/img/nat-7.jpg);
       }
@@ -129,19 +138,21 @@
     text-transform: uppercase;
     text-align: right;
     color: $color-white;
-    @include respond(tab-port) {
+
+    @media only screen and (max-width: 56.25em) {
       width: 36%;
     }
-    @media (max-width: 660px) {
+    @media only screen and (max-width: 660px) {
       width: 40%;
     }
-    @media (max-width: 470px) {
+    @media only screen and (max-width: 470px) {
       width: 48%;
     }
-    @media (max-width: 420px) {
+    @media only screen and (max-width: 420px) {
       width: 64%;
     }
   }
+
   &__heading-span {
     padding: 0.7rem 1.5rem;
     box-decoration-break: clone;
@@ -166,6 +177,7 @@
       );
     }
   }
+
   &__details {
     ul {
       list-style: none;
@@ -193,7 +205,7 @@
     width: 90%;
     text-align: center;
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       position: relative;
       top: 0;
       left: 0;
@@ -206,7 +218,7 @@
     color: white;
     margin-bottom: 7rem;
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       margin-bottom: 4rem;
     }
   }
@@ -218,7 +230,7 @@
     font-size: 6rem;
     font-weight: 100;
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       font-size: 5rem;
     }
   }
