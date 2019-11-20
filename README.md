@@ -23,3 +23,11 @@
 ![nature](github/webpage-mobile.jpg)
 
 #### Browser support was also considered (graceful degradation used).
+
+#### To run my project locally, you need:
+
+`npm install -g gulp-cli`
+
+`npm install`
+
+`gulp`
